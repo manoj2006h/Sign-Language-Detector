@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-29T14:05:57Z",
+  "experiment": "baseline",
+  "checkpoint": {
+    "path": "checkpoints/best.pt",
+    "sha256": "b2ed6aa8aea023d37c694939fa952bc6f76de546b93f68cc0bea5dc54664fd74",
+    "epoch": 2,
+    "best_val_loss": 2.2658441066741943,
+    "classes": [
+      "hello",
+      "iloveyou",
+      "thankyou"
+    ],
+    "format_version": 1
+  },
+  "dataset": {
+    "path": "data/test",
+    "identity_sha256": "e9f7879f10951296b8eff0f8de2e1dd48535cb357c81c80944a14b19e6ec947f",
+    "samples": 15,
+    "boxes": 15,
+    "class_counts": {
+      "hello": 7,
+      "iloveyou": 3,
+      "thankyou": 5
+    }
+  },
+  "settings": {
+    "device": "cpu",
+    "batch_size": 4,
+    "score_threshold": 0.01,
+    "confidence_threshold": 0.5,
+    "match_iou_threshold": 0.5,
+    "iou_thresholds": [
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9,
+      0.95
+    ]
+  },
+  "metrics": {
+    "schema_version": 1,
+    "conventions": {
+      "box_format": "normalized xyxy",
+      "iou_thresholds": [
+        0.5,
+        0.55,
+        0.6,
+        0.65,
+        0.7,
+        0.75,
+        0.8,
+        0.85,
+        0.9,
+        0.95
+      ],
+      "confidence_threshold": 0.5,
+      "match_iou_threshold": 0.5,
+      "ap_interpolation": "101-point COCO-style precision envelope",
+      "aggregation": "whole dataset, matched per image then accumulated"
+    },
+    "class_names": [
+      "hello",
+      "iloveyou",
+      "thankyou"
+    ],
+    "images": 15,
+    "ground_truth_objects": 15,
+    "ground_truth_per_class": {
+      "hello": 7,
+      "iloveyou": 3,
+      "thankyou": 5
+    },
+    "predictions_total": 375,
+    "predictions_at_confidence": 0,
+    "mAP@0.5": 0.09194129851790935,
+    "mAP@0.5:0.95": 0.023157435591541726,
+    "ap_by_iou": {
+      "0.50": {
+        "hello": 0.16420698673640957,
+        "iloveyou": 0.04913824715804914,
+        "thankyou": 0.06247866165926937
+      },
+      "0.55": {
+        "hello": 0.15374556323556882,
+        "iloveyou": 0.04913824715804914,
+        "thankyou": 0.06247866165926937
+      },
+      "0.60": {
+        "hello": 0.0,
+        "iloveyou": 0.04913824715804914,
+        "thankyou": 0.007169682485489928
+      },
+      "0.65": {
+        "hello": 0.0,
+        "iloveyou": 0.04913824715804914,
+        "thankyou": 0.0
+      },
+      "0.70": {
+        "hello": 0.0,
+        "iloveyou": 0.01603017444601603,
+        "thankyou": 0.0
+      },
+      "0.75": {
+        "hello": 0.0,
+        "iloveyou": 0.01603017444601603,
+        "thankyou": 0.0
+      },
+      "0.80": {
+        "hello": 0.0,
+        "iloveyou": 0.01603017444601603,
+        "thankyou": 0.0
+      },
+      "0.85": {
+        "hello": 0.0,
+        "iloveyou": 0.0,
+        "thankyou": 0.0
+      },
+      "0.90": {
+        "hello": 0.0,
+        "iloveyou": 0.0,
+        "thankyou": 0.0
+      },
+      "0.95": {
+        "hello": 0.0,
+        "iloveyou": 0.0,
+        "thankyou": 0.0
+      }
+    },
+    "per_class": {
+      "hello": {
+        "class_id": 0,
+        "ap50": 0.16420698673640957,
+        "ap75": 0.0,
+        "ap": 0.03179525499719784,
+        "ground_truth": 7,
+        "predictions": 0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 7,
+        "precision": null,
+        "recall": 0.0
+      },
+      "iloveyou": {
+        "class_id": 1,
+        "ap50": 0.04913824715804914,
+        "ap75": 0.01603017444601603,
+        "ap": 0.024464351197024465,
+        "ground_truth": 3,
+        "predictions": 0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 3,
+        "precision": null,
+        "recall": 0.0
+      },
+      "thankyou": {
+        "class_id": 2,
+        "ap50": 0.06247866165926937,
+        "ap75": 0.0,
+        "ap": 0.013212700580402867,
+        "ground_truth": 5,
+        "predictions": 0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 5,
+        "precision": null,
+        "recall": 0.0
+      }
+    },
+    "micro": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 15,
+      "precision": null,
+      "recall": 0.0
+    },
+    "defined_classes": [
+      "hello",
+      "iloveyou",
+      "thankyou"
+    ],
+    "undefined_classes": [],
+    "class_confusion": {
+      "thankyou": {
+        "hello": 13,
+        "iloveyou": 15
+      },
+      "iloveyou": {
+        "hello": 1
+      },
+      "hello": {
+        "iloveyou": 1
+      }
+    }
+  },
+  "environment": {
+    "timestamp": "2026-10-29T14:05:57Z",
+    "python": "3.13.16",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+    "machine": "x86_64",
+    "processor": "",
+    "cpu_count": 16,
+    "torch": "2.8.0+cu128",
+    "cuda_available": false,
+    "device": "cpu",
+    "torchvision": "0.23.0+cu128"
+  },
+  "warnings": [
+    "Split integrity report flags leakage between train and test; these metrics are not person-independent generalization."
+  ]
+}

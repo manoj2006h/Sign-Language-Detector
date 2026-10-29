@@ -53,10 +53,21 @@ class HungarianMatcher(nn.Module):
             batch_boxes = yhat["pred_boxes"][batch_idx]    # [num_queries, 4]
             batch_prob = batch_logits.softmax(-1)          # [num_queries, num_classes]
             
-            # Get targets for this batch
-            tgt_labels = target["labels"].to(torch.long)   # [num_targets]
-            tgt_boxes = target["boxes"].to(batch_boxes.dtype)  # [num_targets, 4]
-            
+            # Get targets for this batch; predictions may be on CUDA.
+            tgt_labels = target["labels"].to(
+                device=batch_boxes.device, dtype=torch.long
+            )   # [num_targets]
+            tgt_boxes = target["boxes"].to(
+                device=batch_boxes.device, dtype=batch_boxes.dtype
+            )  # [num_targets, 4]
+
+            # An image with no objects has no assignment. scipy expects a
+            # non-empty cost matrix, so short-circuit it explicitly.
+            if tgt_labels.numel() == 0:
+                empty = torch.empty(0, dtype=torch.int64)
+                indices.append((empty, empty))
+                continue
+
             # Compute cost matrix for this batch only
             # cost_class[i, j] = -probability that query i predicts class of target j
             cost_class = -batch_prob[:, tgt_labels]  # [num_queries, num_targets]
@@ -108,13 +119,19 @@ class DETRLoss(nn.Module):
         assert 'pred_logits' in yhat
         src_logits = yhat['pred_logits']
         idx = self.get_matched_query_indices(indices)
+        idx = tuple(index.to(src_logits.device) for index in idx)
 
         target_classes_o = torch.cat([t["labels"][J] for t, (_, J) in zip(y, indices)])
+        target_classes_o = target_classes_o.to(src_logits.device)
         target_classes = torch.full(src_logits.shape[:2], self.num_classes,
                                   dtype=torch.int64, device=src_logits.device)
         target_classes[idx] = target_classes_o
         
-        loss_ce = F.cross_entropy(src_logits.transpose(1, 2), target_classes, self.empty_weight)
+        loss_ce = F.cross_entropy(
+            src_logits.transpose(1, 2),
+            target_classes,
+            self.empty_weight.to(src_logits.device),
+        )
         losses = {'loss_ce': loss_ce}
 
         return losses
@@ -126,8 +143,14 @@ class DETRLoss(nn.Module):
         """
         assert 'pred_boxes' in yhat
         idx = self.get_matched_query_indices(indices)
+        idx = tuple(index.to(yhat['pred_boxes'].device) for index in idx)
         src_boxes = yhat['pred_boxes'][idx]
         target_boxes = torch.cat([t['boxes'][i] for t, (_, i) in zip(y, indices)], dim=0)
+        if target_boxes.numel() == 0:
+            # Keep the loss connected to the graph so backward() still works
+            # for an all-background batch.
+            zero = src_boxes.sum() * 0.0
+            return {'loss_bbox': zero, 'loss_giou': zero}
 
         loss_bbox = F.l1_loss(src_boxes, target_boxes, reduction='none')
 
@@ -161,17 +184,34 @@ class DETRLoss(nn.Module):
                      "boxes": Tensor of dim [num_target_boxes, 4] containing box coordinates
         """
 
+        if len(y) != yhat['pred_logits'].shape[0]:
+            raise ValueError(
+                f"Batch has {yhat['pred_logits'].shape[0]} predictions but {len(y)} targets"
+            )
+
+        # Coerce target dtypes and move them to the prediction device before
+        # matching/loss computation.
+        device = yhat['pred_logits'].device
+        y = [
+            {
+                'labels': t['labels'].to(device=device, dtype=torch.long),
+                'boxes': t['boxes'].to(device=device, dtype=torch.float32),
+            }
+            for t in y
+        ]
+        for target in y:
+            if target['labels'].numel() == 0:
+                continue
+            if target['labels'].min().item() < 0 or target['labels'].max().item() >= self.num_classes:
+                raise ValueError(
+                    f"Target label outside configured classes 0..{self.num_classes - 1}: "
+                    f"{target['labels'].tolist()}"
+                )
+
         # Retrieve the matching between the yhat of the last layer and the y
         indices = self.matcher(yhat, y)
 
         # Compute the average number of target boxes across all nodes, for normalization purposes
-        device = next(iter(yhat.values())).device
-        # optional: coerce target dtypes defensively
-        y = [
-            {'labels': t['labels'].to(torch.long), 'boxes': t['boxes'].to(torch.float32)}
-            for t in y
-        ]
-
         num_boxes = sum(len(t["labels"]) for t in y)
         num_boxes = torch.as_tensor([num_boxes], dtype=torch.float, device=device).clamp(min=1)
         

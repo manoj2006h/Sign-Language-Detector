@@ -1,0 +1,472 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-29T14:05:57Z",
+  "experiment": "baseline",
+  "checkpoint_sha256": "b2ed6aa8aea023d37c694939fa952bc6f76de546b93f68cc0bea5dc54664fd74",
+  "confidence_threshold": 0.5,
+  "iou_threshold": 0.5,
+  "summary": {
+    "images": 15,
+    "ground_truth_objects": 15,
+    "predictions": 0,
+    "true_positives": 0,
+    "false_positives": 0,
+    "false_negatives": 15,
+    "images_with_errors": 15
+  },
+  "confidence_distribution": {
+    "bin_edges": [
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "counts": [
+      66,
+      239,
+      55,
+      15,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "images": [
+    {
+      "image": "1490d852-thankyou-4b295f22-725a-11f0-bdf3-b791a62111e4.jpg",
+      "path": "data/test/images/1490d852-thankyou-4b295f22-725a-11f0-bdf3-b791a62111e4.jpg",
+      "ground_truth_objects": 1,
+      "predictions": 0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "matches": [],
+      "false_positive_indices": [],
+      "unmatched_ground_truth": [
+        0
+      ],
+      "ground_truth_boxes": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.26644736528396606,
+            0.3779904246330261,
+            0.7033492922782898,
+            0.740031898021698
+          ]
+        }
+      ],
+      "predicted_boxes": [],
+      "visualization": "reports/error_analysis/baseline_1490d852-thankyou-4b295f22-725a-11f0-bdf3-b791a62111e4.jpg"
+    },
+    {
+      "image": "21b15c9a-iloveyou-37a68614-725a-11f0-bdf3-b791a62111e4.jpg",
+      "path": "data/test/images/21b15c9a-iloveyou-37a68614-725a-11f0-bdf3-b791a62111e4.jpg",
+      "ground_truth_objects": 1,
+      "predictions": 0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "matches": [],
+      "false_positive_indices": [],
+      "unmatched_ground_truth": [
+        0
+      ],
+      "ground_truth_boxes": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.6432416439056396,
+            0.14673034846782684,
+            0.8271530866622925,
+            0.5183414220809937
+          ]
+        }
+      ],
+      "predicted_boxes": [],
+      "visualization": "reports/error_analysis/baseline_21b15c9a-iloveyou-37a68614-725a-11f0-bdf3-b791a62111e4.jpg"
+    },
+    {
+      "image": "6050ec8b-thankyou-4d0ce00c-725a-11f0-bdf3-b791a62111e4.jpg",
+      "path": "data/test/images/6050ec8b-thankyou-4d0ce00c-725a-11f0-bdf3-b791a62111e4.jpg",
+      "ground_truth_objects": 1,
+      "predictions": 0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "matches": [],
+      "false_positive_indices": [],
+      "unmatched_ground_truth": [
+        0
+      ],
+      "ground_truth_boxes": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.26913875341415405,
+            0.4864434003829956,
+            0.6970694065093994,
+            0.840510368347168
+          ]
+        }
+      ],
+      "predicted_boxes": [],
+      "visualization": "reports/error_analysis/baseline_6050ec8b-thankyou-4d0ce00c-725a-11f0-bdf3-b791a62111e4.jpg"
+    },
+    {
+      "image": "6f60f1f3-iloveyou-3fd627f4-725a-11f0-bdf3-b791a62111e4.jpg",
+      "path": "data/test/images/6f60f1f3-iloveyou-3fd627f4-725a-11f0-bdf3-b791a62111e4.jpg",
+      "ground_truth_objects": 1,
+      "predictions": 0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "matches": [],
+      "false_positive_indices": [],
+      "unmatched_ground_truth": [
+        0
+      ],
+      "ground_truth_boxes": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.6620813608169556,
+            0.1866028904914856,
+            0.8486841917037964,
+            0.5422647595405579
+          ]
+        }
+      ],
+      "predicted_boxes": [],
+      "visualization": "reports/error_analysis/baseline_6f60f1f3-iloveyou-3fd627f4-725a-11f0-bdf3-b791a62111e4.jpg"
+    },
+    {
+      "image": "71f2fdd3-thankyou-4c6bfb92-725a-11f0-bdf3-b791a62111e4.jpg",
+      "path": "data/test/images/71f2fdd3-thankyou-4c6bfb92-725a-11f0-bdf3-b791a62111e4.jpg",
+      "ground_truth_objects": 1,
+      "predictions": 0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "matches": [],
+      "false_positive_indices": [],
+      "unmatched_ground_truth": [
+        0
+      ],
+      "ground_truth_boxes": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.2816985547542572,
+            0.38915467262268066,
+            0.7024521827697754,
+            0.8022328615188599
+          ]
+        }
+      ],
+      "predicted_boxes": [],
+      "visualization": "reports/error_analysis/baseline_71f2fdd3-thankyou-4c6bfb92-725a-11f0-bdf3-b791a62111e4.jpg"
+    },
+    {
+      "image": "82b46951-hello-333e1de4-725a-11f0-bdf3-b791a62111e4.jpg",
+      "path": "data/test/images/82b46951-hello-333e1de4-725a-11f0-bdf3-b791a62111e4.jpg",
+      "ground_truth_objects": 1,
+      "predictions": 0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "matches": [],
+      "false_positive_indices": [],
+      "unmatched_ground_truth": [
+        0
+      ],
+      "ground_truth_boxes": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.12290669977664948,
+            0.3301435708999634,
+            0.33642345666885376,
+            0.8022328615188599
+          ]
+        }
+      ],
+      "predicted_boxes": [],
+      "visualization": "reports/error_analysis/baseline_82b46951-hello-333e1de4-725a-11f0-bdf3-b791a62111e4.jpg"
+    },
+    {
+      "image": "8644ab8b-hello-35227fec-725a-11f0-bdf3-b791a62111e4.jpg",
+      "path": "data/test/images/8644ab8b-hello-35227fec-725a-11f0-bdf3-b791a62111e4.jpg",
+      "ground_truth_objects": 1,
+      "predictions": 0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "matches": [],
+      "false_positive_indices": [],
+      "unmatched_ground_truth": [
+        0
+      ],
+      "ground_truth_boxes": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.04485645145177841,
+            0.1116427481174469,
+            0.2601674497127533,
+            0.5677831172943115
+          ]
+        }
+      ],
+      "predicted_boxes": [],
+      "visualization": "reports/error_analysis/baseline_8644ab8b-hello-35227fec-725a-11f0-bdf3-b791a62111e4.jpg"
+    },
+    {
+      "image": "aabe1c47-thankyou-4a879836-725a-11f0-bdf3-b791a62111e4.jpg",
+      "path": "data/test/images/aabe1c47-thankyou-4a879836-725a-11f0-bdf3-b791a62111e4.jpg",
+      "ground_truth_objects": 1,
+      "predictions": 0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "matches": [],
+      "false_positive_indices": [],
+      "unmatched_ground_truth": [
+        0
+      ],
+      "ground_truth_boxes": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.23863637447357178,
+            0.4019138813018799,
+            0.665669858455658,
+            0.840510368347168
+          ]
+        }
+      ],
+      "predicted_boxes": [],
+      "visualization": "reports/error_analysis/baseline_aabe1c47-thankyou-4a879836-725a-11f0-bdf3-b791a62111e4.jpg"
+    },
+    {
+      "image": "ae62192a-hello-34810edc-725a-11f0-bdf3-b791a62111e4.jpg",
+      "path": "data/test/images/ae62192a-hello-34810edc-725a-11f0-bdf3-b791a62111e4.jpg",
+      "ground_truth_objects": 1,
+      "predictions": 0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "matches": [],
+      "false_positive_indices": [],
+      "unmatched_ground_truth": [
+        0
+      ],
+      "ground_truth_boxes": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.04485645145177841,
+            0.030303046107292175,
+            0.2763157784938812,
+            0.4768739938735962
+          ]
+        }
+      ],
+      "predicted_boxes": [],
+      "visualization": "reports/error_analysis/baseline_ae62192a-hello-34810edc-725a-11f0-bdf3-b791a62111e4.jpg"
+    },
+    {
+      "image": "b0dded85-hello-3664aed4-725a-11f0-bdf3-b791a62111e4.jpg",
+      "path": "data/test/images/b0dded85-hello-3664aed4-725a-11f0-bdf3-b791a62111e4.jpg",
+      "ground_truth_objects": 1,
+      "predictions": 0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "matches": [],
+      "false_positive_indices": [],
+      "unmatched_ground_truth": [
+        0
+      ],
+      "ground_truth_boxes": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.6486243605613708,
+            0.10526314377784729,
+            0.8262559771537781,
+            0.5087718963623047
+          ]
+        }
+      ],
+      "predicted_boxes": [],
+      "visualization": "reports/error_analysis/baseline_b0dded85-hello-3664aed4-725a-11f0-bdf3-b791a62111e4.jpg"
+    },
+    {
+      "image": "ca158000-iloveyou-47632260-725a-11f0-bdf3-b791a62111e4.jpg",
+      "path": "data/test/images/ca158000-iloveyou-47632260-725a-11f0-bdf3-b791a62111e4.jpg",
+      "ground_truth_objects": 1,
+      "predictions": 0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "matches": [],
+      "false_positive_indices": [],
+      "unmatched_ground_truth": [
+        0
+      ],
+      "ground_truth_boxes": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.08433014899492264,
+            0.17703349888324738,
+            0.28887560963630676,
+            0.5677831172943115
+          ]
+        }
+      ],
+      "predicted_boxes": [],
+      "visualization": "reports/error_analysis/baseline_ca158000-iloveyou-47632260-725a-11f0-bdf3-b791a62111e4.jpg"
+    },
+    {
+      "image": "df0f6242-hello-301908a4-725a-11f0-bdf3-b791a62111e4.jpg",
+      "path": "data/test/images/df0f6242-hello-301908a4-725a-11f0-bdf3-b791a62111e4.jpg",
+      "ground_truth_objects": 1,
+      "predictions": 0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "matches": [],
+      "false_positive_indices": [],
+      "unmatched_ground_truth": [
+        0
+      ],
+      "ground_truth_boxes": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.5293062329292297,
+            0.13716107606887817,
+            0.7778109908103943,
+            0.6762360334396362
+          ]
+        }
+      ],
+      "predicted_boxes": [],
+      "visualization": "reports/error_analysis/baseline_df0f6242-hello-301908a4-725a-11f0-bdf3-b791a62111e4.jpg"
+    },
+    {
+      "image": "f041a17d-iloveyou-398a055a-725a-11f0-bdf3-b791a62111e4.jpg",
+      "path": "data/test/images/f041a17d-iloveyou-398a055a-725a-11f0-bdf3-b791a62111e4.jpg",
+      "ground_truth_objects": 1,
+      "predictions": 0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "matches": [],
+      "false_positive_indices": [],
+      "unmatched_ground_truth": [
+        0
+      ],
+      "ground_truth_boxes": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.0933014377951622,
+            0.1850079894065857,
+            0.3346291780471802,
+            0.6012759208679199
+          ]
+        }
+      ],
+      "predicted_boxes": [],
+      "visualization": "reports/error_analysis/baseline_f041a17d-iloveyou-398a055a-725a-11f0-bdf3-b791a62111e4.jpg"
+    },
+    {
+      "image": "f2b4d210-hello-2890da58-725a-11f0-bdf3-b791a62111e4.jpg",
+      "path": "data/test/images/f2b4d210-hello-2890da58-725a-11f0-bdf3-b791a62111e4.jpg",
+      "ground_truth_objects": 1,
+      "predictions": 0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "matches": [],
+      "false_positive_indices": [],
+      "unmatched_ground_truth": [
+        0
+      ],
+      "ground_truth_boxes": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.06638755649328232,
+            0.04625199735164642,
+            0.2843899428844452,
+            0.5119616985321045
+          ]
+        }
+      ],
+      "predicted_boxes": [],
+      "visualization": "reports/error_analysis/baseline_f2b4d210-hello-2890da58-725a-11f0-bdf3-b791a62111e4.jpg"
+    },
+    {
+      "image": "faf8fade-thankyou-4bca5e68-725a-11f0-bdf3-b791a62111e4.jpg",
+      "path": "data/test/images/faf8fade-thankyou-4bca5e68-725a-11f0-bdf3-b791a62111e4.jpg",
+      "ground_truth_objects": 1,
+      "predictions": 0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "matches": [],
+      "false_positive_indices": [],
+      "unmatched_ground_truth": [
+        0
+      ],
+      "ground_truth_boxes": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.3005382716655731,
+            0.3748006224632263,
+            0.6889952421188354,
+            0.7655501961708069
+          ]
+        }
+      ],
+      "predicted_boxes": [],
+      "visualization": "reports/error_analysis/baseline_faf8fade-thankyou-4bca5e68-725a-11f0-bdf3-b791a62111e4.jpg"
+    }
+  ],
+  "visualizations": [
+    "reports/error_analysis/baseline_1490d852-thankyou-4b295f22-725a-11f0-bdf3-b791a62111e4.jpg",
+    "reports/error_analysis/baseline_21b15c9a-iloveyou-37a68614-725a-11f0-bdf3-b791a62111e4.jpg",
+    "reports/error_analysis/baseline_6050ec8b-thankyou-4d0ce00c-725a-11f0-bdf3-b791a62111e4.jpg",
+    "reports/error_analysis/baseline_6f60f1f3-iloveyou-3fd627f4-725a-11f0-bdf3-b791a62111e4.jpg",
+    "reports/error_analysis/baseline_71f2fdd3-thankyou-4c6bfb92-725a-11f0-bdf3-b791a62111e4.jpg",
+    "reports/error_analysis/baseline_82b46951-hello-333e1de4-725a-11f0-bdf3-b791a62111e4.jpg",
+    "reports/error_analysis/baseline_8644ab8b-hello-35227fec-725a-11f0-bdf3-b791a62111e4.jpg",
+    "reports/error_analysis/baseline_aabe1c47-thankyou-4a879836-725a-11f0-bdf3-b791a62111e4.jpg",
+    "reports/error_analysis/baseline_ae62192a-hello-34810edc-725a-11f0-bdf3-b791a62111e4.jpg",
+    "reports/error_analysis/baseline_b0dded85-hello-3664aed4-725a-11f0-bdf3-b791a62111e4.jpg",
+    "reports/error_analysis/baseline_ca158000-iloveyou-47632260-725a-11f0-bdf3-b791a62111e4.jpg",
+    "reports/error_analysis/baseline_df0f6242-hello-301908a4-725a-11f0-bdf3-b791a62111e4.jpg",
+    "reports/error_analysis/baseline_f041a17d-iloveyou-398a055a-725a-11f0-bdf3-b791a62111e4.jpg",
+    "reports/error_analysis/baseline_f2b4d210-hello-2890da58-725a-11f0-bdf3-b791a62111e4.jpg",
+    "reports/error_analysis/baseline_faf8fade-thankyou-4bca5e68-725a-11f0-bdf3-b791a62111e4.jpg"
+  ],
+  "notes": [
+    "Box overlays: green = ground truth, blue = true positive, red = false positive, orange = false negative.",
+    "Visualizations are limited to avoid large generated artifacts."
+  ]
+}

@@ -1,0 +1,410 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-29T14:11:12Z",
+  "project_classes": [
+    "hello",
+    "iloveyou",
+    "thankyou"
+  ],
+  "external_dataset": "Amrita SLR - Real Time ISL Dataset",
+  "external_annotation_level": "video_level_only",
+  "evidence_supplied": false,
+  "compatibility": {
+    "project_classes": [
+      "hello",
+      "iloveyou",
+      "thankyou"
+    ],
+    "external_classes": [
+      {
+        "folder": "1.bird",
+        "label": "bird",
+        "order": 1,
+        "sample_count": 18
+      },
+      {
+        "folder": "2.black",
+        "label": "black",
+        "order": 2,
+        "sample_count": 18
+      },
+      {
+        "folder": "3.cat",
+        "label": "cat",
+        "order": 3,
+        "sample_count": 18
+      },
+      {
+        "folder": "4.cow",
+        "label": "cow",
+        "order": 4,
+        "sample_count": 18
+      },
+      {
+        "folder": "5.dog",
+        "label": "dog",
+        "order": 5,
+        "sample_count": 18
+      },
+      {
+        "folder": "6.fish",
+        "label": "fish",
+        "order": 6,
+        "sample_count": 18
+      },
+      {
+        "folder": "7.goodmorning",
+        "label": "goodmorning",
+        "order": 7,
+        "sample_count": 18
+      },
+      {
+        "folder": "8.grey",
+        "label": "grey",
+        "order": 8,
+        "sample_count": 18
+      },
+      {
+        "folder": "9.hello",
+        "label": "hello",
+        "order": 9,
+        "sample_count": 18
+      },
+      {
+        "folder": "10.youareperfect",
+        "label": "youareperfect",
+        "order": 10,
+        "sample_count": 21
+      },
+      {
+        "folder": "11.monsoon",
+        "label": "monsoon",
+        "order": 11,
+        "sample_count": 21
+      },
+      {
+        "folder": "12.afternoon",
+        "label": "afternoon",
+        "order": 12,
+        "sample_count": 18
+      },
+      {
+        "folder": "13.angry",
+        "label": "angry",
+        "order": 13,
+        "sample_count": 21
+      },
+      {
+        "folder": "14.bad",
+        "label": "bad",
+        "order": 14,
+        "sample_count": 21
+      },
+      {
+        "folder": "15.boy",
+        "label": "boy",
+        "order": 15,
+        "sample_count": 21
+      },
+      {
+        "folder": "16.eat",
+        "label": "eat",
+        "order": 16,
+        "sample_count": 21
+      },
+      {
+        "folder": "17.friend",
+        "label": "friend",
+        "order": 17,
+        "sample_count": 21
+      },
+      {
+        "folder": "18.drinking",
+        "label": "drinking",
+        "order": 18,
+        "sample_count": 21
+      },
+      {
+        "folder": "19.girl",
+        "label": "girl",
+        "order": 19,
+        "sample_count": 21
+      },
+      {
+        "folder": "20.brother",
+        "label": "brother",
+        "order": 20,
+        "sample_count": 21
+      },
+      {
+        "folder": "21.good",
+        "label": "good",
+        "order": 21,
+        "sample_count": 21
+      },
+      {
+        "folder": "22.father",
+        "label": "father",
+        "order": 22,
+        "sample_count": 21
+      },
+      {
+        "folder": "23.evening",
+        "label": "evening",
+        "order": 23,
+        "sample_count": 21
+      },
+      {
+        "folder": "24.help",
+        "label": "help",
+        "order": 24,
+        "sample_count": 21
+      },
+      {
+        "folder": "25.mother",
+        "label": "mother",
+        "order": 25,
+        "sample_count": 21
+      },
+      {
+        "folder": "26.NAME",
+        "label": "NAME",
+        "order": 26,
+        "sample_count": 18
+      },
+      {
+        "folder": "27.Night",
+        "label": "Night",
+        "order": 27,
+        "sample_count": 21
+      },
+      {
+        "folder": "28.Music",
+        "label": "Music",
+        "order": 28,
+        "sample_count": 18
+      },
+      {
+        "folder": "29.nose",
+        "label": "nose",
+        "order": 29,
+        "sample_count": 21
+      },
+      {
+        "folder": "30.sleep",
+        "label": "sleep",
+        "order": 30,
+        "sample_count": 18
+      },
+      {
+        "folder": "31.sit",
+        "label": "sit",
+        "order": 31,
+        "sample_count": 21
+      },
+      {
+        "folder": "32.sorry",
+        "label": "sorry",
+        "order": 32,
+        "sample_count": 18
+      },
+      {
+        "folder": "33.stand",
+        "label": "stand",
+        "order": 33,
+        "sample_count": 21
+      },
+      {
+        "folder": "34.stop",
+        "label": "stop",
+        "order": 34,
+        "sample_count": 21
+      },
+      {
+        "folder": "35.student",
+        "label": "student",
+        "order": 35,
+        "sample_count": 21
+      },
+      {
+        "folder": "36.study",
+        "label": "study",
+        "order": 36,
+        "sample_count": 21
+      },
+      {
+        "folder": "37.teacher",
+        "label": "teacher",
+        "order": 37,
+        "sample_count": 18
+      },
+      {
+        "folder": "38.thankyou",
+        "label": "thankyou",
+        "order": 38,
+        "sample_count": 21
+      },
+      {
+        "folder": "39.today",
+        "label": "today",
+        "order": 39,
+        "sample_count": 21
+      },
+      {
+        "folder": "40.tommorow",
+        "label": "tommorow",
+        "order": 40,
+        "sample_count": 21
+      },
+      {
+        "folder": "41.welcome",
+        "label": "welcome",
+        "order": 41,
+        "sample_count": 21
+      },
+      {
+        "folder": "42.work",
+        "label": "work",
+        "order": 42,
+        "sample_count": 21
+      },
+      {
+        "folder": "43.yesterday",
+        "label": "yesterday",
+        "order": 43,
+        "sample_count": 21
+      },
+      {
+        "folder": "44.teeth",
+        "label": "teeth",
+        "order": 44,
+        "sample_count": 21
+      },
+      {
+        "folder": "45.hand",
+        "label": "hand",
+        "order": 45,
+        "sample_count": 21
+      },
+      {
+        "folder": "46.write",
+        "label": "write",
+        "order": 46,
+        "sample_count": 21
+      },
+      {
+        "folder": "47.umberlla",
+        "label": "umberlla",
+        "order": 47,
+        "sample_count": 18
+      },
+      {
+        "folder": "48.ring",
+        "label": "ring",
+        "order": 48,
+        "sample_count": 21
+      },
+      {
+        "folder": "50.power",
+        "label": "power",
+        "order": 50,
+        "sample_count": 18
+      }
+    ],
+    "matches": [
+      {
+        "external_label": "hello",
+        "external_folder": "9.hello",
+        "external_order": 9,
+        "project_class": "hello",
+        "project_index": 0,
+        "status": "candidate_unverified",
+        "reason": "English gloss matches, but the archive provides no sign definition. Not usable for training or external evaluation.",
+        "evidence": {
+          "verified": false,
+          "source": null,
+          "definition": null
+        }
+      },
+      {
+        "external_label": "thankyou",
+        "external_folder": "38.thankyou",
+        "external_order": 38,
+        "project_class": "thankyou",
+        "project_index": 2,
+        "status": "candidate_unverified",
+        "reason": "English gloss matches, but the archive provides no sign definition. Not usable for training or external evaluation.",
+        "evidence": {
+          "verified": false,
+          "source": null,
+          "definition": null
+        }
+      }
+    ],
+    "unmatched_external": [
+      "1.bird",
+      "10.youareperfect",
+      "11.monsoon",
+      "12.afternoon",
+      "13.angry",
+      "14.bad",
+      "15.boy",
+      "16.eat",
+      "17.friend",
+      "18.drinking",
+      "19.girl",
+      "2.black",
+      "20.brother",
+      "21.good",
+      "22.father",
+      "23.evening",
+      "24.help",
+      "25.mother",
+      "26.NAME",
+      "27.Night",
+      "28.Music",
+      "29.nose",
+      "3.cat",
+      "30.sleep",
+      "31.sit",
+      "32.sorry",
+      "33.stand",
+      "34.stop",
+      "35.student",
+      "36.study",
+      "37.teacher",
+      "39.today",
+      "4.cow",
+      "40.tommorow",
+      "41.welcome",
+      "42.work",
+      "43.yesterday",
+      "44.teeth",
+      "45.hand",
+      "46.write",
+      "47.umberlla",
+      "48.ring",
+      "5.dog",
+      "50.power",
+      "6.fish",
+      "7.goodmorning",
+      "8.grey"
+    ],
+    "missing_project_classes": [
+      "hello",
+      "iloveyou",
+      "thankyou"
+    ],
+    "duplicate_external_labels": [],
+    "training_mapping": {},
+    "mapping_policy": "Only classes with verified sign-definition evidence are mapped. Gloss similarity alone is insufficient."
+  },
+  "can_convert_to_detr": false,
+  "conversion_blockers": [
+    "No bounding-box annotations exist for any Amrita video.",
+    "No temporal segmentation exists to isolate a sign window.",
+    "No documentation verifies that external hello/thankyou definitions match the project's signs.",
+    "No license/citation file is present in the archive."
+  ],
+  "recommended_use": "Video-level qualitative inspection or a separate video/landmark classification experiment after obtaining authorization and verified annotations. Not DETR training data in Phase 2."
+}

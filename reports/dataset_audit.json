@@ -1,0 +1,831 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-29T14:11:12Z",
+  "internal": {
+    "data_root": "data",
+    "splits": {
+      "train": {
+        "path": "data/train",
+        "samples": 100,
+        "boxes": 100,
+        "class_counts": {
+          "hello": 32,
+          "iloveyou": 34,
+          "thankyou": 34
+        },
+        "identity_sha256": "2da64827ee8ab024d7773cd07f8689f5ef35db886bc97049327f9e461ff7d795",
+        "image_dimensions": {
+          "1920x1080": 100
+        },
+        "invalid_images": []
+      },
+      "test": {
+        "path": "data/test",
+        "samples": 15,
+        "boxes": 15,
+        "class_counts": {
+          "hello": 7,
+          "iloveyou": 3,
+          "thankyou": 5
+        },
+        "identity_sha256": "e9f7879f10951296b8eff0f8de2e1dd48535cb357c81c80944a14b19e6ec947f",
+        "image_dimensions": {
+          "1920x1080": 15
+        },
+        "invalid_images": []
+      }
+    },
+    "exact_duplicate_groups": 0,
+    "near_duplicate_pairs": 413
+  },
+  "external": {
+    "archive": {
+      "path": "dataset_zip/Amrita SLR- Real Time ISL Dataset.zip",
+      "size_bytes": 1465323028,
+      "sha256": "18243692c0a60b7b883199f29aac5c306ef8367a786a11fe96a1697d13190f7b",
+      "valid": true,
+      "entry_count": 1,
+      "file_count": 1,
+      "directory_count": 0,
+      "total_uncompressed_bytes": 1465051081,
+      "total_compressed_bytes": 1465322802,
+      "extensions": {
+        ".zip": 1
+      },
+      "top_level": {
+        "Amrita SLR- Real Time ISL Dataset": 1
+      },
+      "nested_archives": [
+        "Amrita SLR- Real Time ISL Dataset/Amrita SLR Dataset.zip"
+      ],
+      "documentation_files": [],
+      "unsafe_entries": [],
+      "symlink_entries": [],
+      "sample_entries": [
+        {
+          "name": "Amrita SLR- Real Time ISL Dataset/Amrita SLR Dataset.zip",
+          "size_bytes": 1465051081
+        }
+      ],
+      "crc_valid": true,
+      "crc_bad_member": null
+    },
+    "archive_error": null,
+    "extracted_root": "dataset/external/amrita_slr",
+    "extracted": true,
+    "manifest_path": "dataset/external/amrita_slr/amrita_manifest.json",
+    "annotation_status": "video_level_only",
+    "bounding_boxes_available": false,
+    "temporal_annotations_available": false,
+    "totals": {
+      "videos": 978,
+      "classes": 49,
+      "bytes": 1486889455,
+      "duration_seconds": 2608.029,
+      "videos_with_duration": 978,
+      "duplicate_video_groups": 58
+    },
+    "classes": [
+      {
+        "folder": "1.bird",
+        "label": "bird",
+        "order": 1,
+        "videos": 18
+      },
+      {
+        "folder": "2.black",
+        "label": "black",
+        "order": 2,
+        "videos": 18
+      },
+      {
+        "folder": "3.cat",
+        "label": "cat",
+        "order": 3,
+        "videos": 18
+      },
+      {
+        "folder": "4.cow",
+        "label": "cow",
+        "order": 4,
+        "videos": 18
+      },
+      {
+        "folder": "5.dog",
+        "label": "dog",
+        "order": 5,
+        "videos": 18
+      },
+      {
+        "folder": "6.fish",
+        "label": "fish",
+        "order": 6,
+        "videos": 18
+      },
+      {
+        "folder": "7.goodmorning",
+        "label": "goodmorning",
+        "order": 7,
+        "videos": 18
+      },
+      {
+        "folder": "8.grey",
+        "label": "grey",
+        "order": 8,
+        "videos": 18
+      },
+      {
+        "folder": "9.hello",
+        "label": "hello",
+        "order": 9,
+        "videos": 18
+      },
+      {
+        "folder": "10.youareperfect",
+        "label": "youareperfect",
+        "order": 10,
+        "videos": 21
+      },
+      {
+        "folder": "11.monsoon",
+        "label": "monsoon",
+        "order": 11,
+        "videos": 21
+      },
+      {
+        "folder": "12.afternoon",
+        "label": "afternoon",
+        "order": 12,
+        "videos": 18
+      },
+      {
+        "folder": "13.angry",
+        "label": "angry",
+        "order": 13,
+        "videos": 21
+      },
+      {
+        "folder": "14.bad",
+        "label": "bad",
+        "order": 14,
+        "videos": 21
+      },
+      {
+        "folder": "15.boy",
+        "label": "boy",
+        "order": 15,
+        "videos": 21
+      },
+      {
+        "folder": "16.eat",
+        "label": "eat",
+        "order": 16,
+        "videos": 21
+      },
+      {
+        "folder": "17.friend",
+        "label": "friend",
+        "order": 17,
+        "videos": 21
+      },
+      {
+        "folder": "18.drinking",
+        "label": "drinking",
+        "order": 18,
+        "videos": 21
+      },
+      {
+        "folder": "19.girl",
+        "label": "girl",
+        "order": 19,
+        "videos": 21
+      },
+      {
+        "folder": "20.brother",
+        "label": "brother",
+        "order": 20,
+        "videos": 21
+      },
+      {
+        "folder": "21.good",
+        "label": "good",
+        "order": 21,
+        "videos": 21
+      },
+      {
+        "folder": "22.father",
+        "label": "father",
+        "order": 22,
+        "videos": 21
+      },
+      {
+        "folder": "23.evening",
+        "label": "evening",
+        "order": 23,
+        "videos": 21
+      },
+      {
+        "folder": "24.help",
+        "label": "help",
+        "order": 24,
+        "videos": 21
+      },
+      {
+        "folder": "25.mother",
+        "label": "mother",
+        "order": 25,
+        "videos": 21
+      },
+      {
+        "folder": "26.NAME",
+        "label": "NAME",
+        "order": 26,
+        "videos": 18
+      },
+      {
+        "folder": "27.Night",
+        "label": "Night",
+        "order": 27,
+        "videos": 21
+      },
+      {
+        "folder": "28.Music",
+        "label": "Music",
+        "order": 28,
+        "videos": 18
+      },
+      {
+        "folder": "29.nose",
+        "label": "nose",
+        "order": 29,
+        "videos": 21
+      },
+      {
+        "folder": "30.sleep",
+        "label": "sleep",
+        "order": 30,
+        "videos": 18
+      },
+      {
+        "folder": "31.sit",
+        "label": "sit",
+        "order": 31,
+        "videos": 21
+      },
+      {
+        "folder": "32.sorry",
+        "label": "sorry",
+        "order": 32,
+        "videos": 18
+      },
+      {
+        "folder": "33.stand",
+        "label": "stand",
+        "order": 33,
+        "videos": 21
+      },
+      {
+        "folder": "34.stop",
+        "label": "stop",
+        "order": 34,
+        "videos": 21
+      },
+      {
+        "folder": "35.student",
+        "label": "student",
+        "order": 35,
+        "videos": 21
+      },
+      {
+        "folder": "36.study",
+        "label": "study",
+        "order": 36,
+        "videos": 21
+      },
+      {
+        "folder": "37.teacher",
+        "label": "teacher",
+        "order": 37,
+        "videos": 18
+      },
+      {
+        "folder": "38.thankyou",
+        "label": "thankyou",
+        "order": 38,
+        "videos": 21
+      },
+      {
+        "folder": "39.today",
+        "label": "today",
+        "order": 39,
+        "videos": 21
+      },
+      {
+        "folder": "40.tommorow",
+        "label": "tommorow",
+        "order": 40,
+        "videos": 21
+      },
+      {
+        "folder": "41.welcome",
+        "label": "welcome",
+        "order": 41,
+        "videos": 21
+      },
+      {
+        "folder": "42.work",
+        "label": "work",
+        "order": 42,
+        "videos": 21
+      },
+      {
+        "folder": "43.yesterday",
+        "label": "yesterday",
+        "order": 43,
+        "videos": 21
+      },
+      {
+        "folder": "44.teeth",
+        "label": "teeth",
+        "order": 44,
+        "videos": 21
+      },
+      {
+        "folder": "45.hand",
+        "label": "hand",
+        "order": 45,
+        "videos": 21
+      },
+      {
+        "folder": "46.write",
+        "label": "write",
+        "order": 46,
+        "videos": 21
+      },
+      {
+        "folder": "47.umberlla",
+        "label": "umberlla",
+        "order": 47,
+        "videos": 18
+      },
+      {
+        "folder": "48.ring",
+        "label": "ring",
+        "order": 48,
+        "videos": 21
+      },
+      {
+        "folder": "50.power",
+        "label": "power",
+        "order": 50,
+        "videos": 18
+      }
+    ],
+    "signer_metadata": {
+      "authoritative": false,
+      "method": "filename heuristic (krishnaraj/manideep/nachiketh)",
+      "counts": {
+        "krishnaraj": 137,
+        "manideep": 147,
+        "nachiketh": 75,
+        "unknown": 481,
+        "unknown_camera_batch_0403": 138
+      }
+    },
+    "license": "not stated in archive",
+    "documentation_files": [],
+    "duplicates": [
+      {
+        "sha256": "3391b77739fdaf8b1774ff85c20a0eef62b13bfb954d2e18cfe5099c7fc9c76e",
+        "sample_ids": [
+          "amrita-slr-243854158e62029b",
+          "amrita-slr-4ee092b62da0fbe4"
+        ]
+      },
+      {
+        "sha256": "67feb982bc037d9e45dc104a9f09dbf20f4d48261ace8078ffaf48761094e8e6",
+        "sample_ids": [
+          "amrita-slr-b8047aa27ec8d942",
+          "amrita-slr-d01dd877d2334ce3"
+        ]
+      },
+      {
+        "sha256": "57b73be4b70c0b00fd19df0c2932d5f24ecd012f6cbdfee1190a9d1e5a289691",
+        "sample_ids": [
+          "amrita-slr-acf4156c473077dc",
+          "amrita-slr-fbaf7246167f0952"
+        ]
+      },
+      {
+        "sha256": "3963f2f97f42d4cb2bb239e9221127fba216e455e9577253aa4f7b5fe2634acc",
+        "sample_ids": [
+          "amrita-slr-6da29588f434930f",
+          "amrita-slr-6ad6fb3b8ad8f90d",
+          "amrita-slr-d871f506384e6e85"
+        ]
+      },
+      {
+        "sha256": "a174cc4fe904dcbf7cfd9cc2ef8c85193be5851e7390699279e4a723b4aaa4e0",
+        "sample_ids": [
+          "amrita-slr-97cb0b0b3683d764",
+          "amrita-slr-fb2d11bfac270a1c"
+        ]
+      },
+      {
+        "sha256": "26f88ea8e412d8b8cbff98a4860e80b7cdd8f3b107cfb3c79ee4082f200e0f2a",
+        "sample_ids": [
+          "amrita-slr-46b5da63a8599417",
+          "amrita-slr-270735e1ad2ac2bc"
+        ]
+      },
+      {
+        "sha256": "9879fc622092ffc0ea88cf8e2b24a9f9969cc407d176ca3baedacc2c28157550",
+        "sample_ids": [
+          "amrita-slr-6392bb6e992d2005",
+          "amrita-slr-43978ac5b5f2fe4f"
+        ]
+      },
+      {
+        "sha256": "5e6c8d1cb904a3128b4a9dbbfacc3c4d219a64f18f3818129365f221f60e6aa7",
+        "sample_ids": [
+          "amrita-slr-1f73de24880436a8",
+          "amrita-slr-92399d106c17e4ab"
+        ]
+      },
+      {
+        "sha256": "4eed612de03c7afe5930f00f3b61ef03d34c4c767b22a321aa40f7b9e2a770a5",
+        "sample_ids": [
+          "amrita-slr-0219c4a507d7e0d7",
+          "amrita-slr-c1b6ee1d86c13113"
+        ]
+      },
+      {
+        "sha256": "b8c29a6027f35f27a6b65ace4ba7fc7f189237262e6baa398e6f1dbd6f7da525",
+        "sample_ids": [
+          "amrita-slr-dc22f0b20f1f7800",
+          "amrita-slr-454b6605a019a594"
+        ]
+      },
+      {
+        "sha256": "15fcd9937510a5746e5291233f98190b33af64586e2f6ce16b2d86c0cba8832a",
+        "sample_ids": [
+          "amrita-slr-52474d006b8b06c5",
+          "amrita-slr-fb97ac33b82cc438"
+        ]
+      },
+      {
+        "sha256": "ecf216b387a14eb8dce5d4311a273e8c6436bdf89d70bf5a03815ec725569737",
+        "sample_ids": [
+          "amrita-slr-d6bf19b18ffabc7f",
+          "amrita-slr-102cbb9ee61ed8c7"
+        ]
+      },
+      {
+        "sha256": "470a5b350bee62589dfc09256a502db468791fec16017361f0cb14cd0fab92bc",
+        "sample_ids": [
+          "amrita-slr-b15f812581b44a9b",
+          "amrita-slr-c11ba4494822c24c"
+        ]
+      },
+      {
+        "sha256": "1a3c0242eee8c626be510bbf49f155c4d2e230cecfcb734b7b09d79b1bb6ea7f",
+        "sample_ids": [
+          "amrita-slr-e8809a9436e99c36",
+          "amrita-slr-620cc559fe600ab2"
+        ]
+      },
+      {
+        "sha256": "d8c95d168c37335b333d4fc493ad2f26c9279894fed31c556789b327eae5ab1a",
+        "sample_ids": [
+          "amrita-slr-ff6965ad1460933f",
+          "amrita-slr-83c7373713069bd6"
+        ]
+      },
+      {
+        "sha256": "cd014b790e2821d84352433fc000634bcb3f24780f493520e0920673a8fc64d6",
+        "sample_ids": [
+          "amrita-slr-2d0545ceeaa2ec45",
+          "amrita-slr-a46656ba625210b0"
+        ]
+      },
+      {
+        "sha256": "e3e2955d8b31334d3039b4c8410027d0442209fcaaca33a080c4ac910af31918",
+        "sample_ids": [
+          "amrita-slr-966fd076170d6999",
+          "amrita-slr-c100da570c86ac86"
+        ]
+      },
+      {
+        "sha256": "f8e8ff85869c58eeba0819b16792aa58f0940d6b30b417835b138ee4bf415fb6",
+        "sample_ids": [
+          "amrita-slr-f670ecf39da3da46",
+          "amrita-slr-adf5605a5f88c4ed"
+        ]
+      },
+      {
+        "sha256": "3bee503a25e22ea6c61f0d71d73c6ee17d3df20c6e24c7707af6a14cbd5b46bb",
+        "sample_ids": [
+          "amrita-slr-ae9fa3d8ddc68b02",
+          "amrita-slr-07a5b4436bb377c2"
+        ]
+      },
+      {
+        "sha256": "da50d3a61d3dbc772162f6d6010528f47f1acdc26c69850564a4b6bcf5abceaa",
+        "sample_ids": [
+          "amrita-slr-b71a11fd975a1332",
+          "amrita-slr-464bb8efd4a648fa"
+        ]
+      },
+      {
+        "sha256": "bba5e35a7a142ffd84afad1b9de67e0932d1767305f23c9e0d9d7e31dc87bf3c",
+        "sample_ids": [
+          "amrita-slr-ae6b47be2e569a18",
+          "amrita-slr-ca386c27bee9f9d2"
+        ]
+      },
+      {
+        "sha256": "91bee6428f35f041f955787e558b7b14721a9f697172c844f9ffd5f871dad5d7",
+        "sample_ids": [
+          "amrita-slr-adff511693b81382",
+          "amrita-slr-c47fde7d2f0c0fe8"
+        ]
+      },
+      {
+        "sha256": "31ac958a767cd9a6d3b5ff134e027257e7477e7daa322fc1699d02e10b0b564d",
+        "sample_ids": [
+          "amrita-slr-16d94ce2143ce6b2",
+          "amrita-slr-8f5e6b024c27cfa3"
+        ]
+      },
+      {
+        "sha256": "b7546338b024cd09db5633d5ae3811b7fd1ae4260cd502d31cd03eec3fb3365a",
+        "sample_ids": [
+          "amrita-slr-3a4c0e1546ed5ab5",
+          "amrita-slr-104b947b50497da6"
+        ]
+      },
+      {
+        "sha256": "ddc80474760deed8552548199735221219c02a0d0584ac64d367fdb5711ef6b5",
+        "sample_ids": [
+          "amrita-slr-2f1f6ccf1ebfd271",
+          "amrita-slr-a13188d7be248656"
+        ]
+      },
+      {
+        "sha256": "0ad0516f636e26654f8e7654aedb7362a6f70ffbec3fd9a0ca6d80fa830c2336",
+        "sample_ids": [
+          "amrita-slr-7eafb2b2473d45f2",
+          "amrita-slr-34b9866fbedb9f66"
+        ]
+      },
+      {
+        "sha256": "4bbeb001c2a998dcb884a06620b2e2b9c574db30cd32fa3f26ec805ea1efb13c",
+        "sample_ids": [
+          "amrita-slr-98113f68d55ccac0",
+          "amrita-slr-dd1aa1235d69a94f"
+        ]
+      },
+      {
+        "sha256": "f2f8ae14231231693fce1b977c0c06eaac3622caf8c4ad195b5e4a75a9ff0b66",
+        "sample_ids": [
+          "amrita-slr-ffc32a28bb0615c1",
+          "amrita-slr-f1934b6921f6840b"
+        ]
+      },
+      {
+        "sha256": "fb21e1a4282b83979bcefa9d596bea274450ad6fcc6ea7155e4c5670dd9195ed",
+        "sample_ids": [
+          "amrita-slr-1eb151f1956f3dce",
+          "amrita-slr-700b5578abf31678"
+        ]
+      },
+      {
+        "sha256": "4e545812a0aaf71aa00a944c61a5c591a32cc59fa7f77892dc1aaf7fdadfe913",
+        "sample_ids": [
+          "amrita-slr-253c27814ff05439",
+          "amrita-slr-ceb58d32d641767b"
+        ]
+      },
+      {
+        "sha256": "ae02ddbaa9af7c822ac08e10e0007b98cd31346bae1e975877e8d9e9fea4ef87",
+        "sample_ids": [
+          "amrita-slr-ccf635932a0aae63",
+          "amrita-slr-b02eecc831dcfd4b"
+        ]
+      },
+      {
+        "sha256": "207fc4c24de46803e4190066849118f7740cbf7029a631501b328b0411253806",
+        "sample_ids": [
+          "amrita-slr-9a6cd63bba67cf60",
+          "amrita-slr-6c3bfa0f42b0e846"
+        ]
+      },
+      {
+        "sha256": "1ea7a38a1b7cc6939988e227e48709d163234c4dd74f22e70533341c93f05cc1",
+        "sample_ids": [
+          "amrita-slr-40e874e2939a68df",
+          "amrita-slr-1fdc850398ede983"
+        ]
+      },
+      {
+        "sha256": "e5fc13c33a036a4aa6d2d6004f297ff08c8835c694f6b5e53b56426620d2b6e0",
+        "sample_ids": [
+          "amrita-slr-0e23bcce3fa6d3aa",
+          "amrita-slr-d8ce17fd8bf04d14"
+        ]
+      },
+      {
+        "sha256": "dfc91c3fa770d99c1281032bfeb2d0e4e42e1e7733b7ca782de79233aa21a297",
+        "sample_ids": [
+          "amrita-slr-fada3792afe34d47",
+          "amrita-slr-3cea3fab3cdcaed3"
+        ]
+      },
+      {
+        "sha256": "ca8c4e2802c4732318781a804526a70c09bb8008863f96b8dcd38b44d79cc1b7",
+        "sample_ids": [
+          "amrita-slr-9497d8c5ad7f6197",
+          "amrita-slr-e989b22613c8bcee"
+        ]
+      },
+      {
+        "sha256": "dcd9b09723fa6b56e69de36f0594cc4555ce80f4c373456e4f4c2076715a4ef8",
+        "sample_ids": [
+          "amrita-slr-f2b5dab643898e8b",
+          "amrita-slr-5f094356a90151ea"
+        ]
+      },
+      {
+        "sha256": "633a18aa495a7e7971a302d592085ec0568a70bf23cbb974d805df98f34d8b72",
+        "sample_ids": [
+          "amrita-slr-5ad8606938a72d3c",
+          "amrita-slr-8ea44dd665be9c75"
+        ]
+      },
+      {
+        "sha256": "134a8b66565eebe92f68e5c052c30bf7f0df9e2f727b31a7add12fa8a4d0c9da",
+        "sample_ids": [
+          "amrita-slr-40a6eb9b1b779ee9",
+          "amrita-slr-b191bf6e788fb96a"
+        ]
+      },
+      {
+        "sha256": "86480acb12cfb3c6d67323e708a4e00b9355480a3d1b920a150217c4130e57c0",
+        "sample_ids": [
+          "amrita-slr-0e0d04c1f0097907",
+          "amrita-slr-a2950271dbfaa3a5"
+        ]
+      },
+      {
+        "sha256": "57ac1397ed25fdf5f68a66e1b965aaf60e8e367e71ce75f5e43d3b7da3dd690a",
+        "sample_ids": [
+          "amrita-slr-a166d1260bbc261a",
+          "amrita-slr-6ef72d31c8f2885f"
+        ]
+      },
+      {
+        "sha256": "301a506354a3bfb79b595c9ccad63e5554865ecb864bb7c9baba0eb82bb1bbc6",
+        "sample_ids": [
+          "amrita-slr-9eb2934680b448ea",
+          "amrita-slr-71baab85efe0b713"
+        ]
+      },
+      {
+        "sha256": "74e6638abe0cd1debbbfe0f2da37988efde910c2f223efc3ebc78605b71b2fee",
+        "sample_ids": [
+          "amrita-slr-fce1831057c96a4f",
+          "amrita-slr-f01c52ae6bc010cf"
+        ]
+      },
+      {
+        "sha256": "50a2cdf260bb383b071fa91e0930a51c63bc6cc83ebcb577973e7b618f5c4d62",
+        "sample_ids": [
+          "amrita-slr-a8ef0d166d6f7e18",
+          "amrita-slr-5d92597687efe145"
+        ]
+      },
+      {
+        "sha256": "efeb8bc0e4b5d82d4cfb39467307e99aa9eb7346063e4a9ba1b49f7426289dd0",
+        "sample_ids": [
+          "amrita-slr-3bb2b23f288bc649",
+          "amrita-slr-fa3e88c0ad1304f4"
+        ]
+      },
+      {
+        "sha256": "20066e53b9e9da8aae67c17172cc724f9dad443ba55fd3cf21988279ceac17a6",
+        "sample_ids": [
+          "amrita-slr-1fb6899f6c6cbdf4",
+          "amrita-slr-c9916e2b99284db3"
+        ]
+      },
+      {
+        "sha256": "c7d05f3a2fc1a1980247ef24db3d41ed0af46b8c56f1d5d0ffa3e484d87406ed",
+        "sample_ids": [
+          "amrita-slr-ccf573148df6bfc8",
+          "amrita-slr-63afed3ff0a64486"
+        ]
+      },
+      {
+        "sha256": "3ecb0cdbc3ef2d2579c3553053d3926ae0dc5980cc2ceef637c8d944c7cc1c4c",
+        "sample_ids": [
+          "amrita-slr-b465589a7f07f36e",
+          "amrita-slr-c33e942e3692fa95"
+        ]
+      },
+      {
+        "sha256": "ad7583d461c303179d28349b36bc049d21c9020eb514951cfd716ac58e0dbfee",
+        "sample_ids": [
+          "amrita-slr-a8a3d96e6d179228",
+          "amrita-slr-dfe6d3aee3d41e15"
+        ]
+      },
+      {
+        "sha256": "8421ddc412b7e16ac2ae9005ff72098b34df5fb6c5cc399639c5543b616596e4",
+        "sample_ids": [
+          "amrita-slr-d35178b27a1280a2",
+          "amrita-slr-a9a2e528ff1d1196"
+        ]
+      },
+      {
+        "sha256": "56fb03646038ac4b71c82ec0cfc40fc52fef99df640fb258214dd4d3f4f6b3a3",
+        "sample_ids": [
+          "amrita-slr-ea2c5a9dc3f96074",
+          "amrita-slr-559a96f0d4a71b18"
+        ]
+      },
+      {
+        "sha256": "139ed87d717e5b84234e642474a4c4001bcceb9b64f07963401e373c1e94458e",
+        "sample_ids": [
+          "amrita-slr-d67ede5450411c26",
+          "amrita-slr-519e11252fd25160"
+        ]
+      },
+      {
+        "sha256": "a36d3e772e3da41a2a312e573f53faa73fa3f564061818bcb5a0b6768c50eed6",
+        "sample_ids": [
+          "amrita-slr-be38ce67d916ddf8",
+          "amrita-slr-004d32a6cf37ef70"
+        ]
+      },
+      {
+        "sha256": "3b19ca2a1c4aa93167bb860db0e274df3121229228a6082ecd82b5e5b51c5fb3",
+        "sample_ids": [
+          "amrita-slr-680c9812bb510766",
+          "amrita-slr-e451701f412434cf"
+        ]
+      },
+      {
+        "sha256": "09b370e3f09ef6c802b9845070f041f40378f005d5098977fbbc9c208b9eb450",
+        "sample_ids": [
+          "amrita-slr-a59570ebfceb071b",
+          "amrita-slr-167c2503c827a768"
+        ]
+      },
+      {
+        "sha256": "87cd3d2381edd257008304ed9f4515e75cf211e4759bf25ed21f711bd0b87154",
+        "sample_ids": [
+          "amrita-slr-3a7f6ef76593f88f",
+          "amrita-slr-74dbf97fd17403fa"
+        ]
+      },
+      {
+        "sha256": "7647f0e05e07400dbf9caa1063b859b67c2c30b228ae852056cb2c066cc60543",
+        "sample_ids": [
+          "amrita-slr-0e900a1f3c9e0769",
+          "amrita-slr-5e7d626bff874626"
+        ]
+      },
+      {
+        "sha256": "58276e8aa297a91971bff748dc617f1e51174762a8911aa8a01973385da046f6",
+        "sample_ids": [
+          "amrita-slr-1a4ca93d2a44eb91",
+          "amrita-slr-01646a90c523925e"
+        ]
+      }
+    ],
+    "detr_training_ready": false,
+    "blockers": [
+      "No bounding-box or segmentation annotations: only video-level class labels are provided.",
+      "No temporal boundaries, so sign windows cannot be localized.",
+      "No verified sign-definition documentation for candidate gloss matches (hello, thankyou).",
+      "No train/test split and no authoritative signer/session metadata.",
+      "No license or citation file is included in the archive."
+    ]
+  },
+  "environment": {
+    "timestamp": "2026-10-29T14:11:12Z",
+    "python": "3.13.16",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+    "machine": "x86_64",
+    "processor": "",
+    "cpu_count": 16,
+    "torch": "2.8.0+cu128",
+    "cuda_available": false,
+    "device": null,
+    "torchvision": "0.23.0+cu128"
+  },
+  "limitations": [
+    "Internal test labels are object detection boxes for three classes; the dataset is small.",
+    "Amrita provides no bounding boxes, so it cannot be scored with detection mAP."
+  ]
+}

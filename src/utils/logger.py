@@ -320,8 +320,22 @@ class SignLanguageLogger:
         )
 
 
-# Global logger instance
-logger = SignLanguageLogger()
+# The legacy module-level logger is created lazily so importing a library
+# module does not create log files as a side effect.
+_global_logger: SignLanguageLogger | None = None
+
+
+def _get_global_logger() -> SignLanguageLogger:
+    global _global_logger
+    if _global_logger is None:
+        _global_logger = SignLanguageLogger()
+    return _global_logger
+
+
+def __getattr__(name: str):
+    if name == "logger":
+        return _get_global_logger()
+    raise AttributeError(f"module {__name__!r} has no attribute {name!r}")
 
 
 def get_logger(name: str = "sign_language") -> SignLanguageLogger:
